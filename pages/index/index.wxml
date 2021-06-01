@@ -1,0 +1,114 @@
+<view class="custom-bar" style="height:{{navHeight}}px">
+  <view class="custom-bar__wrapper"
+    style="margin-top:{{searchMarginTop}}px; height: {{searchHeight}}px;width: {{searchWidth}}px">
+    <text class="cuIcon-peoplefill text-black text-bold padding"></text>
+    <view class="search-group">
+      <image src="/images/search.png" mode="aspectFit" />
+      <input class="search-group__input" auto-focus placeholder="你感兴趣的" />
+    </view>
+  </view>
+</view>
+<view class="main">
+  <view class="header">
+    <view class="header_up">
+      <image src="/images/首页/u57.svg" mode="aspectFit" class='head_svg' style="width:20%"></image>
+      <image src="/images/首页/u56.svg" mode="aspectFit" class='head_svg' style="width:20%"></image>
+    </view>
+    <view class="header_middle">
+      <view class="head_title">
+        <view class="text-white text-l">Intelligent design</view>
+        <view class="text-white text-xxl" style="font-weight: bolder">智 能 眼 镜 设 计</view>
+        <view class="image-parent">
+          <image src="/images/首页/u61.svg"></image>
+          <view class="image-text text-l">凸显您的个性</view>
+        </view>
+      </view>
+    </view>
+    <view class="header_down">
+      <image src="/images/首页/u29.jpg" mode='widthFix' class='jpg' style='width:100%;height:200rpx'></image>
+    </view>
+  </view>
+  <view class="menu">
+    <view class="menu_item">
+      <view class="cu-avatar round lg" style="background-color:#fcb6e0">
+        <text class="cuIcon-shop"></text>
+      </view>
+      <text class="text-black">同城配镜</text>
+    </view>
+    <view class="menu_item">
+      <view class="cu-avatar round lg" style="background-color:#ee9bea">
+        <text class="cuIcon-attention"></text>
+      </view>
+      <text class="text-black">眼健康</text>
+    </view>
+    <view class="menu_item">
+      <view class="cu-avatar round lg" style="background-color:#9fa8f3">
+        <text class="cuIcon-service"></text>
+      </view>
+      <text class="text-black">线上咨询</text>
+    </view>
+    <view class="menu_item">
+      <view class="cu-avatar round lg" style="background-color:#9ef0ec">
+        <text class="cuIcon-cart"></text>
+      </view>
+      <text class="text-black">我的订单</text>
+    </view>
+  </view>
+  <view class="menu_choose">
+    <view class="choose_up">
+      <image src="/images/首页/u54.svg" mode="aspectFit" class='head_svg' style="width:60%"></image>
+    </view>
+    <view class="choose_middle">
+      <view class="choose_title">
+        <view class="text-white text-xxl text-bord" style="font-weight: bolder">智 能 设 计</view>
+        <view class="choose-image-parent">
+          <image src="/images/首页/u45.svg"></image>
+          <view class="choose-image-text text-l">专属于您个人的设计</view>
+        </view>
+      </view>
+    </view>
+    <view class="choose_down">
+      <image src="/images/首页/u43.svg" mode='widthFix' class='svg' style='width:100%'></image>
+    </view>
+  </view>
+  <view class="info">
+    <view class="info-bg">
+      <view class="info_up">
+        <view class="info-parent">
+          <view class="info-title">
+            <text class="text-lg">护眼小知识</text>
+            <view class="line"></view>
+          </view>
+          <view class="info-list" wx:for="{{infolist1}}" wx:key="this" wx:for-index="idx">
+            <view class="cu-tag round bg-{{item.bgcolor}} light" style="width:90%">
+              <view class="info-text text-black text-m">{{idx+1}}.{{item.content}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="info_down">
+        <image src="/images/首页/u62.svg" mode='widthFix' class='svg' style='width:100%'></image>
+      </view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="info-bg">
+      <view class="info_up">
+        <view class="info-parent">
+          <view class="info-title">
+            <text class="text-lg">护眼食物推荐</text>
+            <view class="line"></view>
+          </view>
+          <view class="info-list" wx:for="{{infolist2}}" wx:key="this" wx:for-index="idx">
+            <view class="cu-tag round bg-{{item.bgcolor}} light" style="width:90%">
+              <view class="info-text text-black text-m">{{idx+1}}.{{item.content}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="info_down">
+        <image src="/images/首页/u69.svg" mode='widthFix' class='svg' style='width:100%'></image>
+      </view>
+    </view>
+  </view>
+</view>
