@@ -70,5 +70,10 @@ Page({
         })
       },
     })
+  },
+  gotoGlasses: function () {
+    wx.navigateTo({
+      url: '/pages/glasses/glasses',
+    })
   }
 })

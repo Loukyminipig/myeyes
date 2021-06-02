@@ -29,7 +29,7 @@
     </view>
   </view>
   <view class="menu">
-    <view class="menu_item">
+    <view class="menu_item" bindtap="gotoGlasses">
       <view class="cu-avatar round lg" style="background-color:#fcb6e0">
         <text class="cuIcon-shop"></text>
       </view>

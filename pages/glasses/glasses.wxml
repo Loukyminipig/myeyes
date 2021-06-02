@@ -1,0 +1,58 @@
+<view class="sort-list">
+  <view class="sort" bindtap="changeBoxBtn" data-num="1">智能排序
+    <image src="/images/美瞳_隐形眼镜/down.jpg" style="width:8px;height:8px;"></image>
+  </view>
+  <view class="sort" bindtap="changeBoxBtn" data-num="2">速度
+    <image src="/images/美瞳_隐形眼镜/down.jpg" style="width:9px;height:9px;"></image>
+  </view>
+  <view class="sort" bindtap="changeBoxBtn" data-num="3">筛选
+    <image src="/images/美瞳_隐形眼镜/down.jpg" style="width:9px;height:9px;"></image>
+  </view>
+</view>
+<!-- 智能排序 -->
+<view class="capacity-sort-list {{states==1?'capacity-act':''}}" bindtap="tapsort">
+  <view wx:for="{{capacity_list}}" class="capacity-sort" data-index="{{item.num}}">{{item}}</view>
+</view>
+<!-- 筛选 -->
+<view class="filterList-box {{states==3?'filter-act':''}}">
+  <view class="filterList-characteristic-title">品牌</view>
+  <view class="filterList-sort-list">
+    <view wx:for="{{filterList_list1}}" class="filterList-sort" data-index="{{item.num}}">{{item}}</view>
+  </view>
+  <view class="filterList-characteristic-title">类型</view>
+  <view class="filterList-sort-list">
+    <view wx:for="{{filterList_list2}}" class="filterList-sort" data-index="{{item.num}}">{{item}}</view>
+  </view>
+  <view class="filterList-footer">
+    <view class="filterList-footer-delect">重置</view>
+    <view class="filterList-footer-finish" bindtap="filterDone">完成</view>
+  </view>
+</view>
+<!-- 速度 -->
+<view class="filterList-box {{states==2?'filter-act':''}}">
+  <view class="filterList-sort-list">
+    <view wx:for="{{filterList_list3}}" class="filterList-sort" data-index="{{item.num}}">{{item}}</view>
+  </view>
+  <view class="filterList-footer">
+    <view class="filterList-footer-delect">重置</view>
+    <view class="filterList-footer-finish" bindtap="filterDone">完成</view>
+  </view>
+</view>
+
+<view class='list'>
+  <block wx:for='{{goodsList}}' wx:key='list' wx:for-item="item">
+  <view class="list_item">
+      <navigator url='details?id={{item.goods_id}}'>
+      <view class='img'>
+        <image src="{{imghref}}{{item.goods_img}}"  mode="aspectFit"/>
+      </view>
+      <view class='info'>
+        <view class='title'>{{item.goods_title}} </view>
+        <view class='price'>￥{{item.goods_price}} {{item.content}} {{item.op}}</view>
+        <view class='num'>销量{{item.goods_sellnum}} {{item.tip}}</view>
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>
