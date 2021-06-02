@@ -35,7 +35,7 @@
       </view>
       <text class="text-black">同城配镜</text>
     </view>
-    <view class="menu_item">
+    <view class="menu_item" bindtap="gotoHealthy">
       <view class="cu-avatar round lg" style="background-color:#ee9bea">
         <text class="cuIcon-attention"></text>
       </view>

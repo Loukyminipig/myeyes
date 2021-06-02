@@ -75,5 +75,10 @@ Page({
     wx.navigateTo({
       url: '/pages/glasses/glasses',
     })
+  },
+  gotoHealthy: function () {
+    wx.navigateTo({
+      url: '/pages/healthy/healthy',
+    })
   }
 })

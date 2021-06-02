@@ -1,0 +1,14 @@
+<!--pages/healthy/result/result.wxml-->
+<image src="/images/提交结果/u278.png" style="width:100%"></image>
+<view style="background-color:white">
+  <text class="text-bord text-xxl text-black">治疗方法:</text>
+  <text class="text-bord text-xl text-black">
+    \n１）放弃治疗干眼症，每天按照网上找到资料进行按摩，机会是整个眼周围、头部按摩，起到缓解作用
+
+    ２）吃各种有利眼睛的药和食品，大量吃了很多的枸杞、菊花泡茶、桂圆等
+
+    ３）发现经常开始生口疮，并且越来越频繁，每天早上起床，口感舌燥、嘴唇干，白天，特别是午后，手脚发热明显
+
+    ４）有时偶尔眼睛周围麻木，脸部肌肉麻木，咽干，有偶尔头晕目眩症状，经常眼冒金星。
+  </text>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/healthy/healthy.wxml-->
+<scroll-view scroll-y="{{true}}">
+  <view wx:for='{{qlist}}' wx:key='list' wx:for-index="idx">
+    <view class="cu-form-group margin-top">
+      <text>{{idx+1}}.{{item}}</text>
+      <radio-group class="block">
+        <view class="cu-form-group">
+          <view class="title">是</view>
+          <view>
+            <radio class="green"></radio>
+          </view>
+        </view>
+        <view class="cu-form-group">
+          <view class="title">否</view>
+          <view>
+            <radio class="red"></radio>
+          </view>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+</scroll-view>
+<view class="padding flex flex-direction">
+  <button class="cu-btn bg-green margin-tb-sm lg" bindtap="gotoHealthyResult">提交</button>
+</view>

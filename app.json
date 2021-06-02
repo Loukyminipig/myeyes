@@ -3,6 +3,8 @@
     "pages/index/index",
     "pages/glasses/glasses",
     "pages/glasses/details/details",
+    "pages/healthy/healthy",
+    "pages/healthy/result/result",
     "pages/logs/logs"
   ],
   "window":{
