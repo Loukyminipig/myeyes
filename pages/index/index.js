@@ -56,7 +56,7 @@ Page({
     this.setData({
       menuButtonInfo: wx.getMenuButtonBoundingClientRect()
     })
-    console.log(this.data.menuButtonInfo)
+    // console.log(this.data.menuButtonInfo)
     const { top, width, height, right } = this.data.menuButtonInfo
     wx.getSystemInfo({
       success: (res) => {

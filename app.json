@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/glasses/glasses",
+    "pages/glasses/details/details",
     "pages/logs/logs"
   ],
   "window":{
